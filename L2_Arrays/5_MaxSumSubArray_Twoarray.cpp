@@ -5,6 +5,8 @@ using namespace std;
 int main(){
     int arr[]={1,3,-5,9,-1,10};//initialization
     int n=sizeof(arr)/sizeof(int);
+    sort(arr,arr+n);
+    cout<<arr[i]<<" ";
     int sum;
     int ans=INT_MIN;
     int si,sj;

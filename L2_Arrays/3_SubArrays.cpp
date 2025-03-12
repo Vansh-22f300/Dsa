@@ -15,8 +15,10 @@ int main(){
                 cout<<arr[k]<<" ";
                 sum+=arr[k];
             }
-            ans=max(ans,sum);
-
+            // ans=max(ans,sum);
+            if(sum>ans){
+                ans=sum;
+            }
             cout<<"Sum: "<<sum;
             cout<<endl;
         }
