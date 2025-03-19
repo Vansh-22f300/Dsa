@@ -3,10 +3,10 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int arr[]={10,2,3,4,5};
+    int arr[]={1,2,3,4};
     int n=sizeof(arr)/sizeof(int);
     int res[100] = {1};
-    res[0]=1;
+    // res[0]=1;
     int ans=arr[0];
     for(int i=1;i<n;i++){
        res[i]=ans;
