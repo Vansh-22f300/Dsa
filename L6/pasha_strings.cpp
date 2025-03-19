@@ -1,14 +1,15 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n;
-    cin>>n;
     string s;
     cin>>s;
+    int n;
+    cin>>n;
+
     int len=s.size();
     int m;
     cin>>m;
-    int cnt[len];
+    int* cnt = new int[len]();  // Dynamically allocated array initialized to 0
     for(int i=0;i<m;i++){
         int ai;
         cin>>ai;
@@ -23,4 +24,6 @@ int main(){
         }
     }
     cout<<s<<endl;
+    delete[] cnt;  // Free dynamically allocated memory
+    return 0;
 }
