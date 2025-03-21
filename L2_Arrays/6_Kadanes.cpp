@@ -23,9 +23,10 @@ int main(){
             sum+=arr[i];
             if(sum<0) sum=0;
             ans=max(ans,sum);
-            }
-            
-        }
-        cout<<"sum:"<<ans;
+        }   
+    }
+    
+    
+    cout<<"sum:"<<ans;
     return 0;
 }

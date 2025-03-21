@@ -1,15 +1,12 @@
 #include<iostream>
 using namespace std;
+int cnt[100000]={0};
 int main(){
     string s;
     cin>>s;
-    int n;
-    cin>>n;
-
     int len=s.size();
     int m;
     cin>>m;
-    int* cnt = new int[len]();  // Dynamically allocated array initialized to 0
     for(int i=0;i<m;i++){
         int ai;
         cin>>ai;
@@ -24,6 +21,5 @@ int main(){
         }
     }
     cout<<s<<endl;
-    delete[] cnt;  // Free dynamically allocated memory
     return 0;
 }

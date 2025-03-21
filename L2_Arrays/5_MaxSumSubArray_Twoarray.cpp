@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){
-    int arr[]={1,3,-5,9,-1,10};//initialization
+    int arr[]={8 ,-8, 9 ,-9 ,10 ,-11 ,12};//initialization
     int n=sizeof(arr)/sizeof(int);
     sort(arr,arr+n);
     // cout<<arr[i]<<" ";
