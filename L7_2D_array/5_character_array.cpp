@@ -19,6 +19,7 @@ int main(){
     // cout<<name<<endl;
     
     char a[100];
+    // cin.getline(a,100); //to take input
     inputString(a,100,'.');
     cout<<"Array:"<<a<<endl;
     return 0;

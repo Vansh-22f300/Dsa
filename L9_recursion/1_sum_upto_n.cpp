@@ -1,11 +1,11 @@
 #include<iostream>
 using namespace std;
-int incseq(int n){
+int sumupton(int n){
     if (n==0) return n;
-    return (n+incseq(n-1));
+    return (n+sumupton(n-1));
 }
 int main(){
 int n;
 cin>>n;
-cout<<incseq(n);
+cout<<sumupton(n);
 }

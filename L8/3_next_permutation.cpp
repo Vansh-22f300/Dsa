@@ -4,6 +4,7 @@ using namespace std;
 int findindex(char a[]){
     int k=-1;
     int i=strlen(a)-2;
+    cout<<i;
     for(int i=strlen(a)-2;i>=0;i--){
         if(a[i]<a[i+1]){
             k=i;
@@ -22,6 +23,7 @@ void reverse(char a[],int i,int j){
 int main(){
     char a[100];
     cin>>a;
+    cout<<strlen(a)<<endl;
     //1.find index 
     int k=findindex(a);
     //2a check if it is last permutation or not 
