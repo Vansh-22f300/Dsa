@@ -12,6 +12,6 @@ void toh(int n,char src,char helper,char des){
 
 }
 int main(){
-    int n=3;
+    int n=4;
     toh(n,'A','B','C');
-}   
+}   //MOVING FROM A TO C 

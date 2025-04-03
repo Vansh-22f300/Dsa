@@ -10,6 +10,7 @@ int first7ocuurence(int arr[],int n){
     if(index==-1) return -1;
     return index+1;
     
+    
 }
 int main(){
     int n;

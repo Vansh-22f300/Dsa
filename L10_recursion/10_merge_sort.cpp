@@ -36,7 +36,7 @@ void mergesort(int a[],int s,int e){
     }
     //2.sort
     mergesort(b,s,mid);
-    mergesort(c,mid+1,e);
+    mergesort(c,mid+1,e);  
 
     //3.merge
     mergearrays(a,b,c,s,e);

@@ -48,4 +48,6 @@ int main(){
         reverse(a,k+1,strlen(a)-1);
         cout<<a<<endl;
     }
+
+   
 }

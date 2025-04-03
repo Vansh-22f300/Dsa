@@ -36,7 +36,7 @@ int main(){
     }
     col_end--;
     //3.er
-    if(row_start<row_end){
+    if(row_start<=row_end){
         for(int c=col_end;c>=col_start ;c--){
             cout<<a[row_end][c]<<" ";
         }
@@ -44,7 +44,7 @@ int main(){
     row_end--;
 
     //4.sc
-    if(col_start<col_end){
+    if(col_start<=col_end){
         for(int r=row_end;r>=row_start;r--){
             cout<<a[r][col_start]<<" ";
         }

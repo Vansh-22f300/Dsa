@@ -22,7 +22,7 @@ void permutation(char a[],int i){
 }
 int main(){
     char a[100]="abc";
-    // cin>>a;
+    cin>>a;
     // int n=strlen(a);
 
 
