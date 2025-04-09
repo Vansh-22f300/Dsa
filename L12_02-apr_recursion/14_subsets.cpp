@@ -1,31 +1,34 @@
-// Given an integer array nums of unique elements, return all possible subsets (the power set).
+// Given an integer array input of unique elements, return all possible subsets (the power set).
 // The solution set must not contain duplicate subsets. Return the solution in any order.
 // Example 1:
-// Input: nums = [1,2,3]
+// Input: input = [1,2,3]
 // Output: [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
 
 class Solution {
     public:
-        void subsets(vector<int>& nums, vector<int> output, int index, vector<vector<int>> &ans) {
+        vector<vector<int>> ans;
+
+        void subsets(vector<int>& input, vector<int>& output, int index) {
             // Base case
-            if (index >= nums.size()) {
+            if (index >= input.size()) {
                 ans.push_back(output);
                 return;
             }
     
             // Exclude current element
-            subsets(nums, output, index + 1, ans);
+            subsets(input, output, index + 1);
     
             // Include current element
-            output.push_back(nums[index]);
-            subsets(nums, output, index + 1, ans);
+            output.push_back(input[index]);
+            subsets(input, output, index + 1);
+            output.pop_back();
         }
     
-        vector<vector<int>> subsets(vector<int>& nums) {
-            vector<vector<int>> ans;
+        vector<vector<int>> subsets(vector<int>& input) {
             vector<int> output;
-            subsets(nums, output, 0, ans);
+            subsets(input, output, 0);
             return ans;
         }
     };
     
+

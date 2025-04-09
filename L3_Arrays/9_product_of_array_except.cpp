@@ -6,9 +6,10 @@ int main(){
     int left[100];
     int right[100];
 
-    int ans=arr[0];
+    int ans;
 
     left[0]=1;
+    ans=arr[0];
     for(int i=0;i<n;i++){
         left[i]=ans;
         ans*=arr[i];

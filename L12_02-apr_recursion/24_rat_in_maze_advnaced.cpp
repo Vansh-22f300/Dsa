@@ -17,7 +17,7 @@ bool ratInMaze(char maze[][6], int i, int j, int sol[][100], int n, int m) {
 		cout << endl;
 
 		sol[i][j] = 0; // backtracking for final destination cell
-		return false;
+		return true;
 	}
 
 	// recursive case

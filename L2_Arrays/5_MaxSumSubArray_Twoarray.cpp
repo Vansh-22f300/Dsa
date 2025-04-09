@@ -41,7 +41,7 @@ int main(){
     }
     cout<<"Sum:"<<ans<<endl;
     for (int i=si;i<=sj;i++){
-        // cout<<arr[i]<<" ";
+        cout<<arr[i]<<" ";
     }
     cout<<endl;
 
