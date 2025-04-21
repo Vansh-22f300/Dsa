@@ -142,7 +142,7 @@ int main(){
     }
     cout<<endl;
 
-    cout<<"Priority Queue"<<endl;
+    cout<<"Priority Queue MAx Heap"<<endl;
     priority_queue<int> pq;
     pq.push(4);
     pq.push(2);
@@ -152,5 +152,31 @@ int main(){
     pq.pop();
     cout<<"Now top of pq"<<pq.top()<<endl;
     cout<<"size of pq"<<pq.size()<<endl;
+    if(!pq.empty()){
+        cout<<"pq is not empty"<<endl;
+    }
+    else{
+        cout<<"Pq is empty"<<endl;
+    }
+    cout<<endl;
+
+
+    cout<<"Priority queue min heap"<<endl;
+    priority_queue<int,vector<int>,greater<int>> Minheap;
+    Minheap.push(4);
+    Minheap.push(2);
+    Minheap.push(5);
+    Minheap.push(3);
+    cout<<"Top of Minheap: "<<Minheap.top()<<endl;
+    Minheap.pop();
+    cout<<"Now top of Minheap"<<Minheap.top()<<endl;
+    cout<<"size of Minheap"<<Minheap.size()<<endl;
+    if(!Minheap.empty()){
+        cout<<"Minheap is not empty"<<endl;
+    }
+    else{
+        cout<<"Minheap is empty"<<endl;
+    }
+
     return 0;
 }
