@@ -86,7 +86,7 @@ void levelOrderTraversal(Node* root) {
 
 	//asli traversal start krete h 
 
-	while(!q.empty()) {
+	while(!q.empty()) { 
 		Node* front = q.front();
 		q.pop();
 

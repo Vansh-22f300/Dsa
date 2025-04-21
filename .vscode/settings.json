@@ -5,6 +5,8 @@
     "iostream": "cpp",
     "array": "cpp",
     "initializer_list": "cpp",
-    "utility": "cpp"
+    "utility": "cpp",
+    "new": "cpp",
+    "*._using_vectorcpp": "cpp"
   }
 }
