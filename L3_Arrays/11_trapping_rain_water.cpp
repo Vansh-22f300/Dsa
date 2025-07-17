@@ -28,7 +28,7 @@ int main(){
     }
 
 
-    int total_water=0;
+    int total_water=0; 
         for(int i=0;i<n;i++){
            int minimum=min(left[i],right[i]);
            if(minimum-arr[i]>0){

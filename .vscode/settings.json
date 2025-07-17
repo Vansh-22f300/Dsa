@@ -71,7 +71,7 @@
     "valarray": "cpp"
   },
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": true,
     "scminput": false

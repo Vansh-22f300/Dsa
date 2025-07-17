@@ -122,6 +122,7 @@ bool search(Node* root,int target){
     if(!root){
         return false;
     }
+	
     if(root->data==target){
         return true;
     }
