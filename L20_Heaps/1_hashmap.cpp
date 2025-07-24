@@ -74,6 +74,8 @@ public:
 	}
 
 	void insert(string key, int value) {
+        if (search(key) != NULL) return; // If the key already exists, do not insert again
+
 		node* n = new node(key, value);
 		int i = hashIndex(key);
         // i is the index where we will insert the new node
@@ -101,6 +103,26 @@ public:
 			cout << "\n";
 		}
 	}
+    node *search(string key) {
+        int idx = hashIndex(key);
+        node* t = h[idx];
+        while (t) {
+            if (t->key == key) {
+                return t; // Found the node with the key
+            }
+            t = t->next; // Move to the next node in the linked list
+        }
+        return NULL; // Key not found
+    }
+
+    int& operator[](string key) {
+        node* ans = search(key);
+        if(ans==NULL){
+            insert(key, -1);
+        }
+        ans= search(key);
+        return ans->data; // Return the value associated with the key
+    }
 
 };
 
@@ -117,8 +139,16 @@ int main() {
 
 	h.print();
 
+    node* ans = h.search("Apple");
+    if (ans) {
+        cout << "Found: " << ans->key << " with value: " << ans->data << endl;
+    } else {
+        cout << "Key not found." << endl;
+    }
 
-
+    h["Banana"] = 50; //Upar se banana ki data bucket byy reference mil jayegi
+    h["Banana"] = 150; // Update the value for Banana
+    cout<< "Banana: " << h["Banana"] << endl; // Access the value for Banana
 	return 0;
 }
 
