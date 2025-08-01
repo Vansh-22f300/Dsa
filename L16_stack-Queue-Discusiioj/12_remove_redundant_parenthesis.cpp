@@ -7,7 +7,8 @@ bool findRedundantBrackets(string &s)
         if(ch=='(' || ch=='+'|| ch=='-'|| ch=='*'|| ch=='/'){
             st.push(ch);
         }
-        else if(ch==')'){
+        else 
+            if(ch==')'){
             bool isredundant=true;
             while(!st.empty() and st.top()!='('){
                 char temp=st.top();
